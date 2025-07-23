@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./A\ landscape.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+ 
+}
+ 
+/* Navbar */
+.navbar {
+  background-color:#1b4d84;
+  padding: 10px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  margin: 0 20px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover {
+    color: hotpink;
+}
+ 
+/* Container */
+.container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 0 10px white;
+  text-align: center;
+}
+.container p {
+  font-size: 16px;
+  color: white;
+  margin-top: 20px;
+}
+ 
+/* Button */
+button {
+  background-color: #1b4d84;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1b4d84;
+}
+ 
+/* Footer */
+.footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 160px;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+ 
+ 
+ 
+/* CSS Styling */
+.login-container {
+  position: relative;
+  display: inline-block;
+}
+ 
+.options {
+  display: none;
+  position: absolute;
+  background-color:#1b4d84;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+ 
+.login-option {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+}
+ 
+.login-option:hover {
+  background-color: #f0f0f0;
+}
+ 
+/* Show dropdown on hover */
+.login-container:hover .options {
+  display: block;
+}
+ 
+ 

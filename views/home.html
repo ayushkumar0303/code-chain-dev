@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome | Upskilling </title>
+  
+  <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <% if (!username) { %>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+      
+      <% } %>
+      <% if (username!=="admin123") { %>
+        <li><a href="/survey">Start Survey</a></li>
+      <% } else { %>
+        <li><a href="/admin">Check Responses</a></li>
+      <% } %>
+      <li><a href="/contact-us">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Main Section -->
+  <div class="container">
+    <h2>Welcome to the Upskilling Needs Collector</h2>
+    <p>
+      This platform is designed to help individuals from underserved communities share their aspirations and skills so they can access better learning opportunities and earn a sustainable livelihood.
+      <br>Simply click below to begin filling out your information in a simple and friendly format.
+    </p>
+    
+    <% if (username!=="admin123") { %>
+      <a href="/survey"><button>Start Survey</button></a> 
+    <% } else { %>
+      <a href="/admin"><button>Check Responses</button</a>
+    <% } %>
+   
+ 
+  </div>
+</body>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Genpact & NGO Partnership - Codechain Devs</p>
+  </footer>
+</html>
+ 

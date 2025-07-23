@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upskill Form</title>
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+      <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/contact-us">Contact Us</a></li>
+    </ul>
+  </nav>
+ 
+  <div class="container">
+    <h2>Personal Information</h2>
+    <form action="/survey" method="POST">
+      <input type="text" placeholder="Name" name="name" required />
+      <input type="number" placeholder="Age" name="age" required />
+      <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <select name="occupation" required>
+        <option value="">Select Occupation</option>
+        <option value="Gov. Job">Govt.Job</option>
+        <option value="Private Job">Prvt.Job</option>
+        <option value="Unemployed">Unemployed</option>
+      </select>
+      <input type="Number" placeholder="Annual Income" name="income" required />
+      <input type="text" placeholder="Education Level" name="educationLevel" required/>
+      <input type="text" placeholder="Current Skills" name="currentSkills" required />
+      <input type="text" placeholder="Skills to Learn" name="skillsToLearn" required/>
+      <input type="text" placeholder="Preferred Language" name="preferredLanguage" required />
+      <input type="number" placeholder="Contact Number" name="contactNumber" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+<footer class="footer">
+    <p>&copy; 2025 Genpact & NGO Partnership - Codechain Devs</p>
+  </footer>
+</html>
