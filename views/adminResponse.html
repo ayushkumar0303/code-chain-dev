@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin dashboard</title>
+    <link rel="stylesheet" href="./adminResponse.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Survey Responses</h2>
+<table border="1">
+  <tr>
+    <th>Username</th><th>Email</th><th>Age</th><th>Gender</th><th>Occupation</th>
+    <th>Annual Income</th>
+    <th>Education Level</th>
+    <th>Current Skills</th>
+    <th>Skills To Learn</th>
+    <th>Preferred Language</th>
+    <th>Contact Number</th></tr>
+  <% data.forEach(row => { %>
+    <tr>
+      <td><%= row.username %></td>
+      <td><%= row.name %></td>
+      <td><%= row.age %></td>
+      <td><%= row.gender %></td>
+      <td><%= row.occupation %></td>
+      <td><%= row.anualIncome %></td>
+      <td><%= row.educationLevel %></td>
+      <td><%= row.currentSkills %></td>
+      <td><%= row.skillsToLearn %></td>
+      <td><%= row.preferredLanguage %></td>
+      <td><%= row.contactNumber %></td>
+      </tr>
+      <%})%>
+</table>
+</div>
+<a href="/export">Download CSV</a>
+<a href="/">Home</a>
+
+</body>
+</html>

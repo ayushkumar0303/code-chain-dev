@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <title>Contact Us | Upskilling Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <% if (!username) { %>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/register">Register</a></li>
+        <% } %>
+        <% if (username!=="admin123") { %>
+          <li><a href="/survey">Start Survey</a></li>
+        <% } else { %>
+          <li><a href="/admin">Check Responses</a></li>
+        <% } %>
+        
+      </ul>
+    </nav>
+    <!-- Contact Section -->
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>
+        If you have any questions or need support, please fill out the form
+        below. Our team will respond as soon as possible.
+      </p>
+
+      <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p style="margin-top: 20px">
+        📍 <strong>Office Address:</strong> XX, Training Lane, Dhaka,
+        Bangladesh<br />
+        📞 <strong>Phone:</strong> +880 123-456XXXX<br />
+        ✉️ <strong>Email:</strong> support@upskill.org
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 Genpact & NGO Partnership - Codechain Devs</p>
+    </footer>
+  </body>
+</html>
