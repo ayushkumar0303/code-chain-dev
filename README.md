@@ -1,0 +1,2 @@
+Our Project stands as a beacon of hope and transformation. This initiative is more than just a program, it's a movement to restore dignity, rebuild livelihoods, and reignite dreams.
+this Project is a community-driven upskilling initiative tailored for individuals and families displaced due to conflict, climate change, or economic hardship. By offering free, accessible, and relevant skill development, we aim to bridge the gap between displacement and opportunity.
